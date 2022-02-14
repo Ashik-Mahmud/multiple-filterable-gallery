@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filterable Gallery ~ by JavaScript</title>
+    <!-- link for custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- header part start here  -->
+    <header id="header"></header>
+    <!-- header part end here  -->
+
+    <!-- main part start here  -->
+    <main id="main">
+        <section id="gallery">
+            <div class="gallery-wrapper container">
+                <aside class="gallery-sidebar">
+                    <h3 class="title">Filter Gallery</h3>
+                    <!-- filter type  -->
+                    <div class="filter-type by-search">
+                        <label for="search-image">By Search Image</label>
+                        <input type="search" placeholder="Search..." id="search-image">
+                    </div>
+                    <!-- filter type  -->
+                    <div class="filter-type by-category">
+                        <label for="">By Category</label>
+                        <div class="button-group">
+                            <button class="button active">All</button>
+                            <button class="button">Animal</button>
+                            <button class="button">Food</button>
+                            <button class="button">Fish</button>
+                            <button class="button">Flower</button>
+                        </div>
+                    </div>
+                    <!-- filter type  -->
+                    <div class="filter-type by-extension">
+                        <label for="search-image">By Type</label>
+                        <div class="button-group">
+                            <button class="button active">All type</button>
+                            <button class="button">JPG</button>
+                            <button class="button">PNG</button>
+                            <button class="button">SVG</button>
+                        </div>
+                    </div>
+                    <!-- filter type end  -->
+                    <button id="reset-all-btn">Reset All</button>
+                </aside>
+                <div class="gallery-content">
+                    <div class="images-wrapper">
+                        <img src="./assets/images/img-1.jpg" data-cat="animal" data-search="animal bird cute chicks" alt="image">
+                        <img src="./assets/images/img-2.svg" data-cat="food" data-search="vector cookies christmas" alt="image">
+                        <img src="./assets/images/img-3.png" data-cat="food" data-search="food corn cartoon png" alt="image">
+                        <img src="./assets/images/img-4.jpg" data-cat="fish" data-search="animal fish dolphin" alt="image">
+                        <img src="./assets/images/img-5.jpg" data-cat="animal" data-search="animal squirrel cute" alt="image">
+                        <img src="./assets/images/img-6.png" data-cat="animal" data-search="animal panda png cartoon"
+                            alt="image">
+                        <img src="./assets/images/img-7.svg" data-cat="animal" data-search="animal penguin bird cartoon" alt="">
+                        <img src="./assets/images/img-8.jpg" data-cat="animal" data-search="animal bird cute" alt="image">
+                        <img src="./assets/images/img-9.png" data-cat="animal" data-search="animal cat mouse cute png"
+                            alt="image">
+                        <img src="./assets/images/img-10.svg" data-cat="fish" data-search="animal fish shark vector" alt="image">
+                        <img src="./assets/images/img-11.jpg" data-cat="food" data-search="food orange" alt="image">
+                        <img src="./assets/images/img-12.svg" data-cat="food" data-search="food vector juice drink" alt="image">
+                        <img src="./assets/images/img-13.png" data-cat="food" data-search="food chicken cartoon png" alt="image">
+                        <img src="./assets/images/img-14.jpg" data-cat="food" data-search="food coffee bread breakfast" alt="">
+                        <img src="./assets/images/img-15.png" data-cat="food" data-search="food burger png cartoon" alt="image">
+                        <img src="./assets/images/img-16.svg" data-cat="food" data-search="food popcorn vector" alt="image">
+                        <img src="./assets/images/img-17.jpg" data-cat="food" data-search="food pancake breakfast" alt="image">
+                        <img src="./assets/images/img-18.svg" data-cat="flower" data-search="flower plants nature vector"
+                            alt="image">
+                        <img src="./assets/images/img-19.png" data-cat="flower" data-search="flower plants nature cartoon"
+                            alt="image">
+                        <img src="./assets/images/img-20.jpg" data-cat="flower" data-search="flower plants nature" alt="image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main part end here  -->
+
+    <!-- footer part start here  -->
+    <footer id="footer"></footer>
+    <!-- footer part end here  -->
+
+
+    <!-- scripting file for Gallery  -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
