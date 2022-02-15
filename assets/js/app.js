@@ -68,7 +68,6 @@ images.forEach(image => {
         document.getElementById("popup-cate").innerText = image.getAttribute('data-cat');
     })
 })
-
 /* 6. when user click outside of the popup while popup gone */
 document.addEventListener("click", function (event) {
     event.target.id === 'popup' ? popupWrapper.classList.remove('active-popup') : '';
