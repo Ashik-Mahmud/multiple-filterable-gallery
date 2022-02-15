@@ -137,9 +137,10 @@ img {
     pointer-events: none;
     transition: all 0.4s ease;
 }
-.popup-image.active{
+.popup-image.active-popup{
     pointer-events: all;
     opacity: 1;
+    text-transform: capitalize;
 }
 .popup-image .img-container{
     position: relative;

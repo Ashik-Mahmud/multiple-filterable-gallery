@@ -58,3 +58,18 @@ resetAllBtn.addEventListener('click', function () {
 })
 
 /* 5. popup image when user click particular image  */
+const popupWrapper = document.getElementById("popup");
+const popupImage = document.querySelector("#popup img");
+images.forEach(image => {
+    image.addEventListener('click', function () {
+        popupWrapper.classList.add('active-popup');
+        let imgSrc = image.src;
+        popupImage.src = imgSrc;
+        document.getElementById("popup-cate").innerText = image.getAttribute('data-cat');
+    })
+})
+
+/* 6. when user click outside of the popup while popup gone */
+document.addEventListener("click", function (event) {
+    event.target.id === 'popup' ? popupWrapper.classList.remove('active-popup') : '';
+})
