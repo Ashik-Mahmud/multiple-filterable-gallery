@@ -121,7 +121,35 @@ img {
     border-radius: 4px;
 }
 
-
+/* popup image  */
+.popup-image{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.774);
+    display: grid;
+    place-items: center;
+    backdrop-filter: grayscale(100%) blur(2px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+.popup-image.active{
+    pointer-events: all;
+    opacity: 1;
+}
+.popup-image .img-container{
+    position: relative;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+.img-container img{
+    max-width: 100%;
+    height: 100%;
+}
 
 /* gallery images  */
 .gallery-wrapper .gallery-content {
